@@ -17,7 +17,6 @@ gem 'dm-constraints'
 gem 'dm-aggregates'
 gem 'dm-core'
 gem 'dm-sqlite-adapter', :group => :test
-gem 'rack', '1.3.3'
 # Test requirements
 
 # Padrino Stable Gem
