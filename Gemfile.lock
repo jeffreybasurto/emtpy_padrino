@@ -114,7 +114,7 @@ DEPENDENCIES
   dm-validations
   erubis (~> 2.7.0)
   padrino (= 0.10.3)
-  rake
+  rake (<= 1.3.3)
   sass
   sinatra-flash
   thin
