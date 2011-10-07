@@ -9,7 +9,7 @@ gem 'sinatra-flash'
 # Component requirements
 gem 'sass'
 gem 'erubis', "~> 2.7.0"
-gem 'dm-sqlite-adapter'
+gem 'dm-postgres-adapter'
 gem 'dm-validations'
 gem 'dm-timestamps'
 gem 'dm-migrations'
