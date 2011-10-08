@@ -1,4 +1,4 @@
-SimpleApp.controllers :home do
+Social.controllers :home do
   get "/" do
     render "index" 
   end  
