@@ -9,10 +9,7 @@ class Social < Padrino::Application
 
   get "/" do
     "Hello World!"
-  end
-
-  get :about, :map => '/about_us' do
-    render :haml, "%p This is a sample blog created to demonstrate how Padrino works!"
+    erb :index    
   end
 
   ##
@@ -58,9 +55,9 @@ class Social < Padrino::Application
   ##
   # You can manage errors like:
   #
-  #   error 404 do
-  #     render 'errors/404'
-  #   end
+  error 404 do
+      render 'errors/404'
+  end
   #
   #   error 505 do
   #     render 'errors/505'
