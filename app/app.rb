@@ -8,7 +8,7 @@ class Social < Padrino::Application
 
   get '/stylesheets/:file.css', :cache=>true do
     expires_in 10
-    content_type 'text/css', :charset => 'utf-8'
+    content_type 'text/css'
     scss :"stylesheets/#{params[:file]}"
   end
 
