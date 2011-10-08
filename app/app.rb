@@ -7,10 +7,6 @@ class Social < Padrino::Application
   enable :sessions
 
 
-  get "/" do
-    "Hello World!"
-    render "index" 
-  end
 
   ##
   # Caching support
