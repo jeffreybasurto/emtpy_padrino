@@ -1,4 +1,4 @@
-Social.controllers :home do
+Social.controllers do
   get "/" do
     render "index" 
   end  
