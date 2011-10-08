@@ -6,7 +6,8 @@ class Social < Padrino::Application
 
   enable :sessions
 
-  get '/stylesheets/:file.css' do
+  get '/stylesheets/:file.css', :cache=>true do
+    expires_in 10
     content_type 'text/css', :charset => 'utf-8'
     sass :file
   end
