@@ -9,7 +9,7 @@ class Social < Padrino::Application
 
   get "/" do
     "Hello World!"
-    erb :index    
+    render "index" 
   end
 
   ##
