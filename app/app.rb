@@ -4,7 +4,7 @@ class Social < Padrino::Application
   register Padrino::Mailer
   register Padrino::Helpers
 
-  enable :sessions
+  disable :sessions
 
   get '/stylesheets/:file.css', :cache=>true do
     expires_in 10
