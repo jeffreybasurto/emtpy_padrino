@@ -6,7 +6,11 @@ class Social < Padrino::Application
 
   enable :sessions
 
-
+  get '/stylesheets/:file.css', :cache=>true do
+    expires_in 10
+    content_type 'text/css'
+    scss :file
+  end
 
   ##
   # Caching support
