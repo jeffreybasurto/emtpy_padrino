@@ -9,7 +9,7 @@ class Social < Padrino::Application
   get '/stylesheets/:file.css', :cache=>true do
     expires_in 10
     content_type 'text/css'
-    scss :file
+    scss :"../stylesheets/#{params[:file]}"
   end
 
   ##
