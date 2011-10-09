@@ -4,7 +4,7 @@ class Social < Padrino::Application
   register Padrino::Mailer
   register Padrino::Helpers
 
-  disable :sessions
+  enable :sessions
 
   get '/stylesheets/:file.css', :cache=>true do
     expires_in 10
@@ -26,7 +26,6 @@ class Social < Padrino::Application
   #   set :cache, Padrino::Cache::Store::Memory.new(50)
   set :cache, Padrino::Cache::Store::File.new(Padrino.root('tmp', app_name.to_s, 'cache')) # default choice
   #
-  layout :layout
   
   ##
   # Application configuration options
